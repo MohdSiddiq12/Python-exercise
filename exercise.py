@@ -29,3 +29,15 @@ def get_circle_info(radius):
 # Function call and unpacking results
 circumference, area = get_circle_info(5)
 print(f"Circumference: {circumference}, Area: {area}")
+
+# Recursive function for factorial
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+# Function call
+result_factorial = factorial(5)
+print(f"Factorial of 5 is {result_factorial}")
+
