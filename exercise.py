@@ -20,3 +20,12 @@ result_custom = greet("Charlie", "Hi")
 print(result_custom)
 
 
+# Function returning multiple values
+def get_circle_info(radius):
+    circumference = 2 * 3.14 * radius
+    area = 3.14 * radius ** 2
+    return circumference, area
+
+# Function call and unpacking results
+circumference, area = get_circle_info(5)
+print(f"Circumference: {circumference}, Area: {area}")
