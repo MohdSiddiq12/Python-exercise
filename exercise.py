@@ -41,3 +41,20 @@ def factorial(n):
 result_factorial = factorial(5)
 print(f"Factorial of 5 is {result_factorial}")
 
+# Higher-order function that takes a function as an argument
+def apply_operation(x, y, operation):
+    return operation(x, y)
+
+# Functions to pass as arguments
+def add(a, b):
+    return a + b
+
+def multiply(a, b):
+    return a * b
+
+# Function calls
+result_add = apply_operation(3, 4, add)
+result_multiply = apply_operation(3, 4, multiply)
+
+print(f"Addition result: {result_add}")
+print(f"Multiplication result: {result_multiply}")
