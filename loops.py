@@ -30,3 +30,18 @@ for x in range(3):
     for y in range(2):
         print(f"({x}, {y})")
 
+
+# For loop with else block
+for i in range(5):
+    print(i)
+else:
+    print("Loop completed!")
+
+# While loop with else block
+counter = 0
+while counter < 3:
+    print(f"Count: {counter}")
+    counter += 1
+else:
+    print("While loop completed!")
+
