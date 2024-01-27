@@ -43,5 +43,5 @@ while counter < 3:
     print(f"Count: {counter}")
     counter += 1
 else:
-    print("While loop completed!")
+    print(f"While loop completed!")
 
