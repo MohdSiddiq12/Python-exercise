@@ -25,3 +25,8 @@ for j in range(5):
         continue
     print(j)
 
+# Nested loops
+for x in range(3):
+    for y in range(2):
+        print(f"({x}, {y})")
+
