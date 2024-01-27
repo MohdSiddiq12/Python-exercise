@@ -12,3 +12,16 @@ counter = 0
 while counter < 5:
     print(f"Count: {counter}")
     counter += 1
+
+# Break statement
+for i in range(5):
+    if i == 3:
+        break
+    print(i)
+
+# Continue statement
+for j in range(5):
+    if j == 2:
+        continue
+    print(j)
+
