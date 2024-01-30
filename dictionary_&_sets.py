@@ -23,7 +23,7 @@ fruits.add('grape')
 fruits.remove('banana')
 
 # Checking membership
-print('apple' in fruits)
+print('apple' in fruits)  
 
 # Set operations (union, intersection, difference)
 set1 = {1, 2, 3}
