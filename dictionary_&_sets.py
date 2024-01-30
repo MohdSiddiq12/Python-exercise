@@ -32,7 +32,7 @@ union_set = set1.union(set2)
 intersection_set = set1.intersection(set2)
 difference_set = set1.difference(set2)
 
-print(f"Union: {union_set}")
+print(f"Union: {union_set}")   
 print(f"Intersection: {intersection_set}")
 print(f"Difference: {difference_set}")
 
