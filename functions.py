@@ -7,7 +7,7 @@ result = greet("Alice")
 print(result)
 
 
-# Function with default parameter
+# Function with default parameter 
 def greet(name, greeting="Hello"):
     return f"{greeting}, {name}!"
 
