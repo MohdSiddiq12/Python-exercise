@@ -25,3 +25,25 @@ class method:
     
 x = method()
 print(x)
+
+#Class Variables vs. Instance Variables:
+#Class Variables: Shared by all instances of a class. Defined outside any method.
+
+class Dog:
+    legs = 4  # Class variable
+
+# Accessing class variable
+print(Dog.legs)  # Output: 4
+
+#Instance Variables: Belong to a specific instance of the class. Defined inside the __init__ method.
+
+
+class Dog:
+    def __init__(self, name):
+        self.name = name  # Instance variable
+
+# Creating an object
+my_dog = Dog("Buddy")
+
+# Accessing instance variable
+print(my_dog.name)  # Output: Buddy
