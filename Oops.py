@@ -182,9 +182,8 @@ my_object = MyClass()
 my_object.my_method(1)            # Output: Received: arg1=1, arg2=None
 my_object.my_method(1, 2)         # Output: Received: arg1=1, arg2=2
 my_object.my_method(1, 2, 3)      # Output: Received: arg1=1, arg2=2, arg3=3
-Using Variable-Length Argument Lists:
-python
-Copy code
+#Using Variable-Length Argument Lists:
+
 class MyClass:
     def my_method(self, *args):
         if len(args) == 1:
@@ -201,7 +200,8 @@ my_object = MyClass()
 my_object.my_method(1)            # Output: Received one argument: 1
 my_object.my_method(1, 2)         # Output: Received two arguments: 1, 2
 my_object.my_method(1, 2, 3)      # Output: Received multiple arguments
-#In this example, the my_method function can handle different argument scenarios within the same method by checking the length of the args tuple.
+#In this example, the my_method function can handle different argument scenarios within the 
+#same method by checking the length of the args tuple.
 
 
 
