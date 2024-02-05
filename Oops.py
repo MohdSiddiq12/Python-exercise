@@ -168,12 +168,12 @@ inner_obj.inner_method()          # Output: This is the inner method
 
 #Using Default Values:
 
-class MyClass:
-    def my_method(self, arg1, arg2=None, arg3=None):
-        if arg3 is None:
-            print(f"Received: arg1={arg1}, arg2={arg2}")
-        else:
-            print(f"Received: arg1={arg1}, arg2={arg2}, arg3={arg3}")
+class  MyClass:
+    my_method(self,arg1, arg2 = none, arg3 = none)
+    if arg3 == none:
+        return(f"recieved {arg1},{arg2}")
+    else:
+        return(f"received {arg1}, {arg2} and {arg3}")
 
 # Creating an object
 my_object = MyClass()
