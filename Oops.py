@@ -51,16 +51,18 @@ print(my_dog.name)  # Output: Buddy
 
 #What is a Constructor?
 #A constructor is a method that is automatically called when an object is instantiated from a class. 
-# It is named __init__ and is used to initialize the attributes of the object. The self parameter refers to the instance of the class, and it allows you to access the object's attributes and methods within the class.
+# It is named __init__ and is used to initialize the attributes of the object.
+#  The self parameter refers to the instance of the class, 
+# and it allows you to access the object's attributes and methods within the class.
 
-How to Define a Constructor:
+#How to Define a Constructor:
 
 class MyClass:
     def __init__(self, parameter1, parameter2):
         self.attribute1 = parameter1
         self.attribute2 = parameter2
-The __init__ method is defined with the self parameter and additional parameters (parameter1, parameter2 in this example).
-Inside the constructor, attributes of the object are initialized using self.attribute = parameter.
+#The __init__ method is defined with the self parameter and additional parameters (parameter1, parameter2 etc).
+#Inside the constructor, attributes of the object are initialized using self.attribute = parameter.
 Example:
 python
 Copy code
