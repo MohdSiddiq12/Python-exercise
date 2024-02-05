@@ -120,12 +120,12 @@ class Example:
 
 
 
-In object-oriented programming (OOP), nested classes refer to the concept of defining one class inside another class. The class that contains another class is called the outer class, and the class inside it is referred to as the inner class or nested class. This concept allows you to organize and encapsulate related functionality within a class hierarchy.
+#In object-oriented programming (OOP), nested classes refer to the concept of defining one class inside another class. 
+#The class that contains another class is called the outer class, and the class inside it is referred
+#to as the inner class or nested class. This concept allows you to organize 
+#and encapsulate related functionality within a class hierarchy.
 
-Let's go through an example to illustrate nested classes in Python:
 
-python
-Copy code
 class OuterClass:
     def __init__(self, outer_attribute):
         self.outer_attribute = outer_attribute
