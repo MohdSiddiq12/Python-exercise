@@ -63,9 +63,8 @@ class MyClass:
         self.attribute2 = parameter2
 #The __init__ method is defined with the self parameter and additional parameters (parameter1, parameter2 etc).
 #Inside the constructor, attributes of the object are initialized using self.attribute = parameter.
-Example:
-python
-Copy code
+#Example:
+
 class Dog:
     def __init__(self, name, age):
         self.name = name
@@ -77,13 +76,14 @@ my_dog = Dog("Buddy", 3)
 # Accessing attributes initialized in the constructor
 print(my_dog.name)  # Output: Buddy
 print(my_dog.age)   # Output: 3
-In this example, the __init__ method is used to initialize the name and age attributes of the Dog class when an object is created.
 
-Default Values in Constructors:
-You can provide default values for parameters in the constructor, making them optional during object creation.
+#In this example, the __init__ method is used to initialize the name,
+#and age attributes of the Dog class when an object is created.
 
-python
-Copy code
+#Default Values in Constructors:
+#You can provide default values for parameters in the constructor, making them optional during object creation.
+
+
 class Person:
     def __init__(self, name="Unknown", age=0):
         self.name = name
@@ -95,13 +95,13 @@ person2 = Person("Alice", 25)
 
 print(person1.name, person1.age)  # Output: Unknown 0
 print(person2.name, person2.age)  # Output: Alice 25
-In this example, if no values are provided during object creation, the default values will be used.
+#In this example, if no values are provided during object creation, the default values will be used.
 
-Multiple Constructors (Overloading in Python):
-While Python does not support method overloading in the traditional sense, you can achieve a similar effect by providing default values for some parameters.
+#Multiple Constructors (Overloading in Python):
+#While Python does not support method overloading in the traditional sense,
+#you can achieve a similar effect by providing default values for some parameters.
 
-python
-Copy code
+
 class Example:
     def __init__(self, parameter1, parameter2=None):
         if parameter2 is None:
