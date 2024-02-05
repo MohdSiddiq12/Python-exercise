@@ -112,10 +112,12 @@ class Example:
             # This block gets executed if parameter2 is provided
             self.attribute1 = parameter1
             self.attribute2 = parameter2
-In this example, you can create an object with either one or two parameters.
+#In this example, you can create an object with either one or two parameters.
 
-Conclusion:
-Constructors are essential in object-oriented programming as they allow you to set up the initial state of an object. They provide a way to initialize attributes and ensure that objects are in a valid state when created. Practice creating and using constructors to become comfortable with this fundamental aspect of Python classes and objects. If you have any specific questions or need further clarification, feel free to ask!
+#Constructors are essential in object-oriented programming as they allow you to set up 
+#the initial state of an object. They provide a way to initialize attributes and ensure that
+#objects are in a valid state when created. 
+
 
 
 
