@@ -12,6 +12,7 @@ my_dog = Dog("Buddy", 3)
 print(my_dog.name)
 my_dog.bark()
 
+
 # Explanation
 # Dog is the name of the class.
 # __init__ is a special method (constructor) that gets called when an object is created. It initializes the attributes of the object.
