@@ -5,13 +5,15 @@ class Animal:
     def __init__(self,species):
         self.species = species
 
-    class makesound(self):
-        
-            print("some animal sound")
+    def make_sound(self):
+        pass
 
 class Dog(Animal):
-    def bark(self):
+    def make_sound(self):
         print("woo!!")
 
-my_Animal = Animal('Mehd')
-my_dog = Dog('khaled')
+my_Animal = Animal("Mehd")
+my_dog = Dog("khaled")
+
+print(my_dog.species)
+print(my_Animal.species)
