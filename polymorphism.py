@@ -28,4 +28,4 @@ my_duck = Duck()
 # Calling the function with different objects
 print(animal_sound(my_dog))  # Output: Woof!
 print(animal_sound(my_cat))  # Output: Meow!
-print(animal_sound(my_duck)) # Output: Quack!
+print(animal_sound(my_duck)) # Output: Quack
