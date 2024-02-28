@@ -1,6 +1,5 @@
-# Python-exercises 
-from beginner to advanced  
- 
+# Python-exercises
+from beginner to advanced
 
   
 
