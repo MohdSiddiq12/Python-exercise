@@ -40,3 +40,12 @@
 #     print("number is negative")
 # else:
 #     print("number is zero")
+
+# Loops:
+# Write a Python program to print all the even numbers from 1 to 20.
+
+n = 20
+for i in range(1, n + 1):
+    if i % 2 == 0:
+        print(i)
+    
