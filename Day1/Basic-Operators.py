@@ -44,8 +44,15 @@
 # Loops:
 # Write a Python program to print all the even numbers from 1 to 20.
 
-n = 20
-for i in range(1, n + 1):
-    if i % 2 == 0:
-        print(i)
+# n = 20
+# for i in range(1, n + 1):
+#     if i % 2 == 0:
+#         print(i)
     
+
+#Lists:
+# Write a Python program to create a list of 5 colors and then print each color on a new line.
+
+# colors = ['red','green','blue','yellow','black']
+# for i in colors:
+#     print(i)
