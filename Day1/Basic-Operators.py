@@ -63,3 +63,11 @@
 # myfruits = ("grapes","apple","mango","pineapple","guava")
 # for i in(myfruits):
 #     print(i)
+
+# Dictionaries:
+# Write a Python program that creates a dictionary with students' names as keys and their ages as values. Then print out each student's name and age.
+
+# dictionary syntax dict_var = {key1 : value1, key2 : value2, …..}
+dict = {"John": 21, "abraham": 23, "joshua": 22}
+for name,age in dict.items():
+    print(name + ":", age)
