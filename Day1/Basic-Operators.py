@@ -56,3 +56,10 @@
 # colors = ['red','green','blue','yellow','black']
 # for i in colors:
 #     print(i)
+
+#Tuples:
+# Write a Python program that creates a tuple of your favorite fruits and then prints them.
+
+# myfruits = ("grapes","apple","mango","pineapple","guava")
+# for i in(myfruits):
+#     print(i)
