@@ -68,6 +68,23 @@
 # Write a Python program that creates a dictionary with students' names as keys and their ages as values. Then print out each student's name and age.
 
 # dictionary syntax dict_var = {key1 : value1, key2 : value2, …..}
-dict = {"John": 21, "abraham": 23, "joshua": 22}
-for name,age in dict.items():
-    print(name + ":", age)
+# dict = {"John": 21, "abraham": 23, "joshua": 22}
+# for name,age in dict.items():
+#     print(name + ":", age)
+
+#Sets:
+# Write a Python program that takes two sets as input and prints the intersection, union, and difference of the sets.
+
+# Taking input for the first set
+set1_input = input("Enter elements of the first set separated by commas: ")
+set1 = set(set1_input.split(','))
+
+# Taking input for the second set
+set2_input = input("Enter elements of the second set separated by commas: ")
+set2 = set(set2_input.split(','))
+
+# Printing the intersection, union, and difference of the sets
+print("Intersection:", set1.intersection(set2))
+print("Union:", set1.union(set2))
+print("Difference (Set1 - Set2):", set1.difference(set2))
+print("Difference (Set2 - Set1):", set2.difference(set1))
