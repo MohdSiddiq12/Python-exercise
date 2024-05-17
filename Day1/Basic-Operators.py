@@ -2,6 +2,8 @@
 #Write a Python program that takes the user's name as input and greets them with "Hello, [name]!"
 
 # 
+# name = input("enter your name: ")
+# print("hello" + name, "Good Morning")
 
 #Basic Operators:
 #Write a Python program that prompts the user to enter two numbers and then performs addition, subtraction,
