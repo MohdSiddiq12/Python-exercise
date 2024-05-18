@@ -25,7 +25,12 @@ movies.append('interstellar')
 movies.remove('slumdog millionare')
 
 
+
 # Sort the list.
+
+movies.sort()
+for i in movies:
+    print(i)
 # Reverse the list.
 # Print the length of the list.
     
