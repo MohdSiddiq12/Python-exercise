@@ -1,45 +1,52 @@
-# Topics to Cover
-# Lists
-# Tuples
-# Dictionaries
-# Sets
+# # Topics to Cover
+# # Lists
+# # Tuples
+# # Dictionaries
+# # Sets
 
-# Create a List:
-# Write a Python program to create a list of your favorite movies and print each movie.
+# # Create a List:
+# # Write a Python program to create a list of your favorite movies and print each movie.
 
-movies = ['slumdog millionare','inception','dark knight rises','Batman','The pursuit of happiness']
-# for i in movies:
-#     print(i)
+# movies = ['slumdog millionare','inception','dark knight rises','Batman','The pursuit of happiness']
+# # for i in movies:
+# #     print(i)
 
-# List Operations:
-# Write a Python program to perform the following operations on a list:
+# # List Operations:
+# # Write a Python program to perform the following operations on a list:
 
-# Append a new item.
-
-
-movies.append('interstellar')
+# # Append a new item.
 
 
-# Remove an item.
-
-movies.remove('slumdog millionare')
+# movies.append('interstellar')
 
 
+# # Remove an item.
 
-# Sort the list.
+# movies.remove('slumdog millionare')
 
-movies.sort()
 
-# Reverse the list.
 
-movies.reverse()
+# # Sort the list.
 
-# Print the length of the list.
+# movies.sort()
 
-# for i in movies:
-#     print(len(i))
+# # Reverse the list.
 
- #list slicing
-print(movies[:3])
-print(movies[-3:])
+# movies.reverse()
+
+# # Print the length of the list.
+
+# # for i in movies:
+# #     print(len(i))
+
+#  #list slicing
+# print(movies[:3])
+# print(movies[-3:])
     
+
+# Create a Tuple:
+# Write a Python program to create a tuple of your favorite books and print each book.
+
+books = ('Negogiating as your life depends on it','leadership qualities','the subtle art of not giving a fuck')
+for i in books:
+    print(i)
