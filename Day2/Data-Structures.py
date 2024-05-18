@@ -48,5 +48,17 @@
 # Write a Python program to create a tuple of your favorite books and print each book.
 
 books = ('Negogiating as your life depends on it','leadership qualities','the subtle art of not giving a fuck')
-for i in books:
-    print(i)
+# for i in books:
+#     print(i)
+
+# Tuple Operations:
+# Write a Python program to:
+
+# Convert the tuple to a list.
+
+books = list(books)
+print(books)
+# Add a new book to the list.
+# Convert the list back to a tuple.
+# Print the final tuple.
+
