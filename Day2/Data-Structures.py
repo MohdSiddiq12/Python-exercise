@@ -33,7 +33,9 @@ movies.sort()
 # Reverse the list.
 
 movies.reverse()
-for i in movies:
-    print(i)
+
 # Print the length of the list.
+
+for i in movies:
+    print(len(i))
     
