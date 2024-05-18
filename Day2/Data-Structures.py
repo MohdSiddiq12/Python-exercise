@@ -36,6 +36,10 @@ movies.reverse()
 
 # Print the length of the list.
 
-for i in movies:
-    print(len(i))
+# for i in movies:
+#     print(len(i))
+
+ #list slicing
+print(movies[:3])
+print(movies[-3:])
     
