@@ -77,5 +77,18 @@
 # Create a Dictionary Create a Dictionary:
 # Write a Python program to create a dictionary with keys as the names of your friends and values as their phone numbers. Print each friend's name and phone number.
 dict = {'sid':7674,'john':1234,'ajay':3456}
+
+
+# Dictionary Operations:
+# Write a Python program to:
+
+# Add a new friend and phone number.
+
+dict['joe'] = 9876
 for name,phone in dict.items():
-    print('name',name + 'phone', + phone)
+    print('name',name  +  'phone', + phone)
+
+
+# Update an existing phone number.
+# Remove a friend from the dictionary.
+# Print the dictionary.
