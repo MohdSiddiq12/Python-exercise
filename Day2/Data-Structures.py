@@ -123,3 +123,9 @@ print(fruits2.difference(fruits1))
 # Check if one set is a subset of the other.
 
 print(fruits1.issubset(fruits2))
+
+# Summary of Differences
+# Lists: Mutable, ordered, allows duplicates, defined with [].
+# Tuples: Immutable, ordered, allows duplicates, defined with ().
+# Dictionaries: Mutable, unordered, unique keys, allows duplicate values, defined with {key: value}.
+# Sets: Mutable, unordered, unique elements, defined with {} or set()
