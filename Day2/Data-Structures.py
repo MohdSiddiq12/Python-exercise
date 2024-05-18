@@ -85,10 +85,13 @@ dict = {'sid':7674,'john':1234,'ajay':3456}
 # Add a new friend and phone number.
 
 dict['joe'] = 9876
-for name,phone in dict.items():
-    print('name',name  +  'phone', + phone)
+
 
 
 # Update an existing phone number.
+
+dict['joe'] = 7890
+for name,phone in dict.items():
+    print('name',name  +  'phone', + phone)
 # Remove a friend from the dictionary.
 # Print the dictionary.
