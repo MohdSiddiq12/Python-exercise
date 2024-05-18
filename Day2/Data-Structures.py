@@ -57,8 +57,16 @@ books = ('Negogiating as your life depends on it','leadership qualities','the su
 # Convert the tuple to a list.
 
 books = list(books)
-print(books)
+# print(books)
 # Add a new book to the list.
+
+books.append('rich dad poor dad')
+# print(books)
 # Convert the list back to a tuple.
+
+books = tuple(books)
+# print(books)
 # Print the final tuple.
+
+print(books)
 
