@@ -68,5 +68,7 @@ books = tuple(books)
 # print(books)
 # Print the final tuple.
 
-print(books)
+# print(books)
 
+# Access Tuple Elements:
+print(books[-3])
