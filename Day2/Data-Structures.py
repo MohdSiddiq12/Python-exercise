@@ -110,11 +110,16 @@
 # Write a Python program to perform the following operations on two sets of fruits:
 
 # Find the union of the sets.
-fruits1 = {'apple','banana','mango'}
+fruits1 = {'apple','banana','mango','date'}
 fruits2 = {'cherry','date','elderberry'}
-x = fruits1.union(fruits2)
-print(x)
+# print(fruits1.union(fruits2))
+
 # Find the intersection of the sets.
+# print(fruits1.intersection(fruits2))
 
 # Find the difference between the sets.
+print(fruits1.difference(fruits2))
+print(fruits2.difference(fruits1))
 # Check if one set is a subset of the other.
+
+print(fruits1.issubset(fruits2))
