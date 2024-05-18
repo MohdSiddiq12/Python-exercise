@@ -29,8 +29,11 @@ movies.remove('slumdog millionare')
 # Sort the list.
 
 movies.sort()
+
+# Reverse the list.
+
+movies.reverse()
 for i in movies:
     print(i)
-# Reverse the list.
 # Print the length of the list.
     
