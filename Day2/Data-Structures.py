@@ -91,7 +91,11 @@ dict['joe'] = 9876
 # Update an existing phone number.
 
 dict['joe'] = 7890
+# for name,phone in dict.items():
+#     print('name',name  +  'phone', + phone)
+# Remove a friend from the dictionary.
+
+del dict['john']
 for name,phone in dict.items():
     print('name',name  +  'phone', + phone)
-# Remove a friend from the dictionary.
 # Print the dictionary.
