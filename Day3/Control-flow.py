@@ -51,5 +51,12 @@
 # for Loop:
 # Write a Python program to print the first 10 natural numbers using a for loop.
 
-for i in range(1,11):
+# for i in range(1,11):
+#     print(i)
+
+# while Loop:
+# Write a Python program to print the numbers from 1 to 10 using a while loop.
+i = 1
+while i<=10:
     print(i)
+    i += 1
