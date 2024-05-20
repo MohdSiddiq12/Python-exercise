@@ -20,15 +20,16 @@
 # if-elif-else Statement:
 # Write a Python program that asks the user for their age and prints whether they are a child, teenager, adult, or senior.
 
-age = int(input("enter your age: "))
-if age <= 5:
-    print("You are child")
-elif age <= 18:
-    print("you are teenager")
-elif age <= 40:
-    print("you are an adult")
-else:
-    print("you are senior")
+# age = int(input("enter your age: "))
+# if age <= 5:
+#     print("You are child")
+# elif age <= 18:
+#     print("you are teenager")
+# elif age <= 40:
+#     print("you are an adult")
+# else:
+#     print("you are senior")
 
 # Nested if Statements:
 # Write a Python program that checks if a number is even or odd and if it is divisible by 3.
+
