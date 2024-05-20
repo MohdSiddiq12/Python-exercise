@@ -33,3 +33,16 @@
 # Nested if Statements:
 # Write a Python program that checks if a number is even or odd and if it is divisible by 3.
 
+number = int(input("enter a number: "))
+if number%2 == 0:
+    print("number is even")
+    if number %3 == 0:
+        print("number is even and is divisible by 3")
+    else:
+        print("number is even and not divisible by 3")
+else:
+    print("number is odd")
+    if number%3 == 0:
+        print("number is odd and is divisible by 3")
+    else:
+        print("number is odd and is not divisible by 3")
