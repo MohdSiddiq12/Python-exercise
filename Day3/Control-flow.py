@@ -73,7 +73,14 @@
 # Continue Statement:
 # Write a Python program that iterates through numbers from 1 to 10 and skips printing the number 5.
 
-for i in range(1,11):
-    if i == 5:
-        continue
-    print(i)
+# for i in range(1,11):
+#     if i == 5:
+#         continue
+#     print(i)
+
+# Nested Loops:
+# Write a Python program to print a multiplication table for numbers from 1 to 5 using nested loops.
+
+for i in range(1,6):
+    for j in range(1,6):
+        print(f"{i} * {j} == {i * j}")
