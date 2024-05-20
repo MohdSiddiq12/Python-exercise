@@ -56,7 +56,19 @@
 
 # while Loop:
 # Write a Python program to print the numbers from 1 to 10 using a while loop.
-i = 1
-while i<=10:
-    print(i)
-    i += 1
+# i = 1
+# while i<=10:
+#     print(i)
+#     i += 1
+
+
+# Break Statement:
+# Write a Python program that iterates through numbers from 1 to 10 and stops the loop if the number is 5.
+
+# for i in range(1,11):
+#     if i == 5:
+#         break
+#     print(i)
+
+# Continue Statement:
+# Write a Python program that iterates through numbers from 1 to 10 and skips printing the number 5.
