@@ -29,24 +29,27 @@
 # Function with Return Statement:
 # Write a Python function that checks if a number is prime and returns True if it is, False otherwise.
 
-def is_prime(num):
-    if num <= 1:
-        return False
-    elif num == 2:
-        return True
-    for i in range(2, int(num**0.5) + 1):
-        if num % i == 0:
-            return False
+# def is_prime(num):
+#     if num <= 1:
+#         return False
+#     elif num == 2:
+#         return True
+#     for i in range(2, int(num**0.5) + 1):
+#         if num % i == 0:
+#             return False
 
-    return True
-number = 11
-if is_prime(number):
-    print(f"{number} is prime.")
-else:
-    print(f"{number} is not prime.")
-# Modules
-# Create a Module:
-# Create a Python module named calculator.py that contains functions for addition, subtraction, multiplication, and division.
+#     return True
+# number = 11
+# if is_prime(number):
+#     print(f"{number} is prime.")
+# else:
+#     print(f"{number} is not prime.")
 
 # Import Module:
 # Write a Python program that imports the calculator.py module and uses its functions to perform arithmetic operations.
+import calculator
+
+print("addition",calculator.add(1,2))
+print("subtractiom",calculator.subtraction(1,2))
+print("multiplication",calculator.multiplication(1,2))
+print("division",calculator.division(1,2))
