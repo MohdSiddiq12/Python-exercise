@@ -13,13 +13,17 @@
 # Functions
 # Simple Function:
 # Write a Python function that takes two numbers as input and returns their sum.
-def add(x,y):
-    return x + y
-num = add(1,2)
-print(num)
+# def add(x,y):
+#     return x + y
+# num = add(1,2)
+# print(num)
 
 # Function with Parameters:
 # Write a Python function that takes a list of numbers as input and returns the maximum value from the list.
+def maximum(*args):
+    return max(*args)
+num = maximum(1,2,3,4,5,6,11,22,33,44)
+print(num)
 
 # Return Statement
 # Function with Return Statement:
