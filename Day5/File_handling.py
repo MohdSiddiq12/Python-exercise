@@ -17,3 +17,6 @@
 # Read Entire File:
 # Write a Python program to read the entire contents of a text file and print them to the console.
 
+with open('Day5\example.txt','r') as file:
+    content = file.read()
+    print(content)
