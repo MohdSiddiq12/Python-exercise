@@ -50,3 +50,8 @@
 # Using Context Managers
 # Context Manager for File Operations:
 # Write a Python program that reads a file and writes its content to another file using a context manager.
+
+with open('Day5\example.txt','r') as source:
+    with open('Day5\destination.txt','w') as destination:
+        for line in source:
+            destination.write(line + '\n')
