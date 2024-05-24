@@ -17,17 +17,36 @@
 # Read Entire File:
 # Write a Python program to read the entire contents of a text file and print them to the console.
 
-with open('Day5\example.txt','r') as file:
-    content = file.read()
-    print(content)
+# with open('Day5\example.txt','r') as file:
+#     content = file.read()
+#     print(content)
 
 # Read File Line by Line:
 # Write a Python program to read a file line by line and print each line to the console.
 
-with open('Day5\example.txt','r') as file:
-    content = file.read()
-    print(content, end=" ")
+# with open('Day5\example.txt','r') as file:
+#     content = file.read()
+#     print(content, end=" ")
 
 # Writing to Files
 # Write to a File:
 # Write a Python program to write a list of strings to a file, each string on a new line.
+
+# lines = ['hello ', 'siddiq']
+# with open('Day5\example.txt','w') as file:
+#     for line in lines:
+#         file.write(line + '\n')
+
+
+# Appending to Files
+# Append to a File:
+# Write a Python program to append a list of strings to an existing file.
+
+# lines = ['how are ','you']
+# with open('Day5\example.txt','a') as file:
+#     for line in lines:
+#         file.write(line + '\n')
+
+# Using Context Managers
+# Context Manager for File Operations:
+# Write a Python program that reads a file and writes its content to another file using a context manager.
