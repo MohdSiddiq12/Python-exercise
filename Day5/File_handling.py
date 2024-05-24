@@ -20,3 +20,10 @@
 with open('Day5\example.txt','r') as file:
     content = file.read()
     print(content)
+
+# Read File Line by Line:
+# Write a Python program to read a file line by line and print each line to the console.
+
+with open('Day5\example.txt','r') as file:
+    content = file.read()
+    print(content, end=" ")
