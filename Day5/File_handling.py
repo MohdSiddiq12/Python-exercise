@@ -27,3 +27,7 @@ with open('Day5\example.txt','r') as file:
 with open('Day5\example.txt','r') as file:
     content = file.read()
     print(content, end=" ")
+
+# Writing to Files
+# Write to a File:
+# Write a Python program to write a list of strings to a file, each string on a new line.
