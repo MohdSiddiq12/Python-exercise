@@ -66,15 +66,28 @@
 # Raising Exceptions
 # Raise Exception:
 # Write a Python function that takes a number as input and raises a ValueError if the number is negative.
-def check_positive(num):
-    if num < 0:
-        raise ValueError('negative numbers are not allowed')
-        return(num)
-try:
-    num = check_positive(-10)
-    print(num)
-except ValueError as e:
-    print(e)
+# def check_positive(num):
+#     if num < 0:
+#         raise ValueError('negative numbers are not allowed')
+#         return(num)
+# try:
+#     num = check_positive(-10)
+#     print(num)
+# except ValueError as e:
+#     print(e)
 # Custom Exceptions
 # Custom Exception:
-# Define a custom exception called NegativeNumberError. Write a Python function that takes a number as input and raises this custom exception if the number is negative.
+# Define a custom exception called NegativeNumberError.
+# Write a Python function that takes a number as input and raises this custom exception if the number is negative.
+
+class negativeNumberError(Exception):
+    pass
+def check_positive(num):
+    if num < 0:
+        raise negativeNumberError("you cant do this shit head")
+        return(num)
+try:
+    num = check_positive(-11)
+    print(num)
+except negativeNumberError as e:
+    print(e)
