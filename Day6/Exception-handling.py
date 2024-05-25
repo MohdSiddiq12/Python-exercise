@@ -14,18 +14,27 @@
 # Basics of Exception Handling
 # Basic Try/Except:
 # Write a Python program that takes two numbers as input from the user and performs division. Use a try/except block to handle any potential division by zero errors.
-try:
-    x = int(input("enter a number"))
-    y = int(input("enter a number"))
-    result = x / y
-    print(result)
-except ZeroDivisionError:
-    print("cannot divide by zero ")
+# try:
+#     x = int(input("enter a number"))
+#     y = int(input("enter a number"))
+#     result = x / y
+#     print(result)
+# except ZeroDivisionError:
+#     print("cannot divide by zero ")
 
 
 # Handling Multiple Exceptions:
 # Write a Python program that takes a list of numbers as input from the user. Use a try/except block to handle both ValueError and TypeError exceptions.
 
+try:
+    numbers = input("enter numbers seperated by spaces").split()
+    numbers = [int(num) for num in numbers]
+    total = sum(numbers)
+    print("sum",total)
+except ValueError:
+    print('value error')
+except TypeError:
+    print("type error")
 # Else and Finally
 # Try/Except/Else:
 # Write a Python program that reads a file. Use a try/except block to handle any potential FileNotFoundError. If no exception occurs, print "File read successfully." Use the else block for this message.
