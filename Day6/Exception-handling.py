@@ -26,20 +26,31 @@
 # Handling Multiple Exceptions:
 # Write a Python program that takes a list of numbers as input from the user. Use a try/except block to handle both ValueError and TypeError exceptions.
 
-try:
-    numbers = input("enter numbers seperated by spaces").split()
-    numbers = [int(num) for num in numbers]
-    total = sum(numbers)
-    print("sum",total)
-except ValueError:
-    print('value error')
-except TypeError:
-    print("type error")
+# try:
+#     numbers = input("enter numbers seperated by spaces").split()
+#     numbers = [int(num) for num in numbers]
+#     total = sum(numbers)
+#     print("sum",total)
+# except ValueError:
+#     print('value error')
+# except TypeError:
+#     print("type error")
 # Else and Finally
 # Try/Except/Else:
-# Write a Python program that reads a file. Use a try/except block to handle any potential FileNotFoundError. If no exception occurs, print "File read successfully." Use the else block for this message.
+# Write a Python program that reads a file. Use a try/except block to handle any potential FileNotFoundError.
+# If no exception occurs, print "File read successfully." Use the else block for this message.
 
+try:
+    with open('Day5\destination.txt','r') as file:
+        content = file.read()
+        print(content)
+except FileNotFoundError:
+    print('file not found')
+else:
+    print("file read successfully")
 # Try/Except/Finally:
+
+
 # Write a Python program that opens a file and writes some data to it. Use a try/except block to handle any potential I/O errors. Ensure that the file is always closed after the operation using the finally block.
 
 # Raising Exceptions
