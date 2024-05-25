@@ -40,19 +40,29 @@
 # Write a Python program that reads a file. Use a try/except block to handle any potential FileNotFoundError.
 # If no exception occurs, print "File read successfully." Use the else block for this message.
 
+# try:
+#     with open('Day5\destination.txt','r') as file:
+#         content = file.read()
+#         print(content)
+# except FileNotFoundError:
+#     print('file not found')
+# else:
+#     print("file read successfully")
+# # Try/Except/Finally:
+
+
+# Write a Python program that opens a file and writes some data to it. 
+# Use a try/except block to handle any potential I/O errors. Ensure that the file is always closed
+# after the operation using the finally block.
+
 try:
-    with open('Day5\destination.txt','r') as file:
-        content = file.read()
-        print(content)
-except FileNotFoundError:
-    print('file not found')
-else:
-    print("file read successfully")
-# Try/Except/Finally:
-
-
-# Write a Python program that opens a file and writes some data to it. Use a try/except block to handle any potential I/O errors. Ensure that the file is always closed after the operation using the finally block.
-
+    file = open('Day5\example.txt','w')
+    file.write("Hello, Siddiq")
+except IOError:
+    print("input/output error")
+finally:
+    file.close()
+    print("the file is closed")
 # Raising Exceptions
 # Raise Exception:
 # Write a Python function that takes a number as input and raises a ValueError if the number is negative.
