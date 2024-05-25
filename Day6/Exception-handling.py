@@ -55,17 +55,26 @@
 # Use a try/except block to handle any potential I/O errors. Ensure that the file is always closed
 # after the operation using the finally block.
 
-try:
-    file = open('Day5\example.txt','w')
-    file.write("Hello, Siddiq")
-except IOError:
-    print("input/output error")
-finally:
-    file.close()
-    print("the file is closed")
+# try:
+#     file = open('Day5\example.txt','w')
+#     file.write("Hello, Siddiq")
+# except IOError: 
+#     print("input/output error")
+# finally:
+#     file.close()
+#     print("the file is closed")
 # Raising Exceptions
 # Raise Exception:
 # Write a Python function that takes a number as input and raises a ValueError if the number is negative.
+def check_positive(num):
+    if num < 0:
+        raise ValueError('negative numbers are not allowed')
+        return(num)
+try:
+    num = check_positive(-10)
+    print(num)
+except ValueError as e:
+    print(e)
 # Custom Exceptions
 # Custom Exception:
 # Define a custom exception called NegativeNumberError. Write a Python function that takes a number as input and raises this custom exception if the number is negative.
