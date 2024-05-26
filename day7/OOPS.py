@@ -49,22 +49,23 @@
 # Create a subclass called Cat that inherits from Animal and adds an attribute for breed. 
 # Create an object of the Cat class and print its attributes.
 
-class Animal():
-    def __init__(self,species,age):
-        self.species = species
-        self.age = age
+# class Animal():
+#     def __init__(self,species,age):
+#         self.species = species
+#         self.age = age
 
-class Cat(Animal):
-    def __init__(self,species,age,breed):
-        super().__init__(species,age)
-        self.breed = breed
+# class Cat(Animal):
+#     def __init__(self,species,age,breed):
+#         super().__init__(species,age)
+#         self.breed = breed
         
 
-cat = Cat("burglar",4,"persian")
-print(f"{cat.species},{cat.age},{cat.breed}")
+# cat = Cat("burglar",4,"persian")
+# print(f"{cat.species},{cat.age},{cat.breed}")
 # Polymorphism
 # Polymorphism:
-# Write two classes, Rectangle and Circle, each with a method called area that calculates and returns the area of the shape. Write a function that takes an object of either class and prints the area.
+# Write two classes, Rectangle and Circle, each with a method called area that calculates and returns the area of the shape. 
+# Write a function that takes an object of either class and prints the area.
 # Encapsulation
 # Encapsulation:
 # Write a Python class called BankAccount with private attributes for account number and balance. Add methods to deposit and withdraw money, and to get the current balance. Use getters and setters to access and modify the private attributes.
