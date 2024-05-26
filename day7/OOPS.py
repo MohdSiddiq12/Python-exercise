@@ -66,28 +66,28 @@
 # Polymorphism:
 # Write two classes, Rectangle and Circle, each with a method called area that calculates and returns the area of the shape. 
 # Write a function that takes an object of either class and prints the area.
-class Rectangle():
-    def __init__(self,l,w):
-        self.l = l
-        self.w = w 
-    def area(self):
-        return self.l * self.w
+# class Rectangle():
+#     def __init__(self,l,w):
+#         self.l = l
+#         self.w = w 
+#     def area(self):
+#         return self.l * self.w
 
-class Circle():
-    def __init__(self,r):
-        self.r = r
-    def area(self):
-        return 3.14 * self.r * self.r
+# class Circle():
+#     def __init__(self,r):
+#         self.r = r
+#     def area(self):
+#         return 3.14 * self.r * self.r
 
 
-def print_area(shape):
-    print(f"The area is: {shape.area()}")
+# def print_area(shape):
+#     print(f"The area is: {shape.area()}")
 
-rectangle = Rectangle(1,2)
-circle = Circle(2)
+# rectangle = Rectangle(1,2)
+# circle = Circle(2)
 
-print_area(rectangle)
-print_area(circle)
+# print_area(rectangle)
+# print_area(circle)
 # Encapsulation
 # Encapsulation:
 # Write a Python class called BankAccount with private attributes for account number and balance.
