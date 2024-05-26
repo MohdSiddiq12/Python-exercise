@@ -21,16 +21,27 @@
 # Write a Python class called Dog that has attributes for name, age, and breed. Create an object 
 #of this class and print its attributes.
 
-class dog():
-    def __init__(self,name,age,breed):
-        self.name = name
-        self.age = age
-        self.breed = breed
-my_dog = dog('husky',2,'asian')
-print(f"{my_dog.name},{my_dog.age},{my_dog.breed}")
+# class dog():
+# #     def __init__(self,name,age,breed):
+# #         self.name = name
+# #         self.age = age
+# #         self.breed = breed
+# # my_dog = dog('husky',2,'asian')
+# print(f"{my_dog.name},{my_dog.age},{my_dog.breed}")
 
 # Methods:
 # Add a method called bark to the Dog class that prints a barking sound. Call this method from an object of the class.
+
+class dog():
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+    def bark(self):
+        print("dog says woof!!")
+my_dog = dog('husky',3)
+print(f"{my_dog.name},{my_dog.age}")
+my_dog.bark()
+
 
 # Inheritance
 # Inheritance:
