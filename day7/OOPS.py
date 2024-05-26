@@ -93,3 +93,37 @@
 # Write a Python class called BankAccount with private attributes for account number and balance.
 # Add methods to deposit and withdraw money, and to get the current balance. Use getters and setters to access 
 # and modify the private attributes.
+
+class BankAccount:
+    def __init__(self, account_number, balance):
+        self.__account_number = account_number
+        self.__balance = balance
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+            print(f"${amount} deposited. New balance: ${self.__balance}")
+        else:
+            print("Invalid deposit amount.")
+
+    def withdraw(self, amount):
+        if 0 < amount <= self.__balance:
+            self.__balance -= amount
+            print(f"${amount} withdrawn. New balance: ${self.__balance}")
+        else:
+            print("Invalid withdrawal amount.")
+
+    def get_balance(self):
+        return self.__balance
+
+    def set_balance(self, balance):
+        if balance >= 0:
+            self.__balance = balance
+        else:
+            print("Invalid balance amount.")
+
+# Create an object of the BankAccount class
+my_account = BankAccount("123456", 1000)
+my_account.deposit(500)
+my_account.withdraw(200)
+print(f"Current balance: ${my_account.get_balance()}")
