@@ -32,20 +32,36 @@
 # Methods:
 # Add a method called bark to the Dog class that prints a barking sound. Call this method from an object of the class.
 
-class dog():
-    def __init__(self,name,age):
-        self.name = name
-        self.age = age
-    def bark(self):
-        print("dog says woof!!")
-my_dog = dog('husky',3)
-print(f"{my_dog.name},{my_dog.age}")
-my_dog.bark()
+# class dog():
+#     def __init__(self,name,age):
+#         self.name = name
+#         self.age = age
+#     def bark(self):
+#         print("dog says woof!!")
+# my_dog = dog('husky',3)
+# print(f"{my_dog.name},{my_dog.age}")
+# my_dog.bark()
 
 
 # Inheritance
 # Inheritance:
-# Write a Python class called Animal with attributes for species and age. Create a subclass called Cat that inherits from Animal and adds an attribute for breed. Create an object of the Cat class and print its attributes.
+# Write a Python class called Animal with attributes for species and age. 
+# Create a subclass called Cat that inherits from Animal and adds an attribute for breed. 
+# Create an object of the Cat class and print its attributes.
+
+class Animal():
+    def __init__(self,species,age):
+        self.species = species
+        self.age = age
+
+class Cat(Animal):
+    def __init__(self,species,age,breed):
+        super().__init__(species,age)
+        self.breed = breed
+        
+
+cat = Cat("burglar",4,"persian")
+print(f"{cat.species},{cat.age},{cat.breed}")
 # Polymorphism
 # Polymorphism:
 # Write two classes, Rectangle and Circle, each with a method called area that calculates and returns the area of the shape. Write a function that takes an object of either class and prints the area.
