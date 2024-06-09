@@ -49,4 +49,7 @@ data = {
 # Create a DataFrame
 df = pd.DataFrame(data)
 
-print("DataFrame:\n", df)
+# print("DataFrame:\n", df)
+
+filtered = df[df['Age'] > 22]
+print(filtered)
