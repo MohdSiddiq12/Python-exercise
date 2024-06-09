@@ -51,8 +51,8 @@ import numpy as np
 
 # print("DataFrame:\n", df)
 
-filtered = df[df['Age'] > 22]
-print(filtered)
+# filtered = df[df['Age'] > 22]
+# print(filtered)
 
 # Matplotlib
 # Basic Plot:
