@@ -27,9 +27,26 @@ import numpy as np
 
 # Array Operations:
 # Write a Python program to create a NumPy array of integers from 1 to 20. Reshape the array to 4x5 and calculate the sum of each column
-arr = np.arange(1,21)
-reshaped_arr = arr.reshape(4, 5)
+# arr = np.arange(1,21)
+# reshaped_arr = arr.reshape(4, 5)
 
-col = reshaped_arr.sum(axis=0)
-print("reshaped_array: ",reshaped_arr)
-print(col)
+# col = reshaped_arr.sum(axis=0)
+# print("reshaped_array: ",reshaped_arr)
+# print(col)
+
+# Create a DataFrame:
+# Write a Python program to create a Pandas DataFrame from a dictionary of lists. Print the DataFrame.
+
+import pandas as pd
+
+# Create a dictionary of lists
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+    'Age': [24, 27, 22, 32],
+    'City': ['New York', 'Los Angeles', 'Chicago', 'Houston']
+}
+
+# Create a DataFrame
+df = pd.DataFrame(data)
+
+print("DataFrame:\n", df)
