@@ -73,4 +73,16 @@ import matplotlib.pyplot as plt
 
 # Bar Plot:
 # Write a Python program to create a bar plot using Matplotlib from a given set of data.
+import matplotlib.pyplot as plt
+
+# Data for the bar plot
+categories = ['A', 'B', 'C', 'D']
+values = [5, 7, 3, 8]
+
+# Create a bar plot
+plt.bar(categories, values)
+plt.xlabel('Categories')
+plt.ylabel('Values')
+plt.title('Bar Plot Example')
+plt.show()
 
