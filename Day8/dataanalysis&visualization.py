@@ -37,19 +37,40 @@ import numpy as np
 # Create a DataFrame:
 # Write a Python program to create a Pandas DataFrame from a dictionary of lists. Print the DataFrame.
 
-import pandas as pd
+# import pandas as pd
 
-# Create a dictionary of lists
-data = {
-    'Name': ['Alice', 'Bob', 'Charlie', 'David'],
-    'Age': [24, 27, 22, 32],
-    'City': ['New York', 'Los Angeles', 'Chicago', 'Houston']
-}
+# # Create a dictionary of lists
+# data = {
+#     'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+#     'Age': [24, 27, 22, 32],
+#     'City': ['New York', 'Los Angeles', 'Chicago', 'Houston']
+# }
 
-# Create a DataFrame
-df = pd.DataFrame(data)
+# # Create a DataFrame
+# df = pd.DataFrame(data)
 
 # print("DataFrame:\n", df)
 
 filtered = df[df['Age'] > 22]
 print(filtered)
+
+# Matplotlib
+# Basic Plot:
+# Write a Python program to create a simple line plot using Matplotlib. Plot the values of y = x^2 for x in the range 0 to 10.
+
+import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
+
+# Create data
+x = range(0, 11)
+y = [i**2 for i in x]
+
+# Create a line plot
+plt.plot(x, y)
+plt.xlabel('x')
+plt.ylabel('y = x^2')
+plt.title('Line Plot of y = x^2')
+plt.show()
+
+# Bar Plot:
+# Write a Python program to create a bar plot using Matplotlib from a given set of data.
