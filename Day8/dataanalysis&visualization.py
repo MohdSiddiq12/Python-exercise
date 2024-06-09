@@ -59,18 +59,18 @@ import numpy as np
 # Write a Python program to create a simple line plot using Matplotlib. Plot the values of y = x^2 for x in the range 0 to 10.
 
 import matplotlib.pyplot as plt
-import matplotlib.pyplot as plt
 
 # Create data
-x = range(0, 11)
-y = [i**2 for i in x]
+# x = range(0, 11)
+# y = [i**2 for i in x]
 
-# Create a line plot
-plt.plot(x, y)
-plt.xlabel('x')
-plt.ylabel('y = x^2')
-plt.title('Line Plot of y = x^2')
-plt.show()
+# # Create a line plot
+# plt.plot(x, y)
+# plt.xlabel('x')
+# plt.ylabel('y = x^2')
+# plt.title('Line Plot of y = x^2')
+# plt.show()
 
 # Bar Plot:
 # Write a Python program to create a bar plot using Matplotlib from a given set of data.
+
