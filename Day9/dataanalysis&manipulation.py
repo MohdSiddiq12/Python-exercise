@@ -29,5 +29,16 @@ import pandas as pd
 # filtered = df[['name','age','salary']][df['age']>17]
 # print(filtered)
 
-Sorting:
+# Sorting:
 # Write a Python program to sort a DataFrame by multiple columns.
+
+data = {
+    'name': ['bob','marley','roca','zendaya','hill','jack','mike'],
+    'age': [17,22,35,23,21,20,20],
+    'city': ['nyc','hyderabad','paris','london','istanbul','sogut','zech'],
+    'salary': [18000,20000,22000,35000,70000,11000,88000]
+}
+
+df = pd.DataFrame(data)
+sorting = df.sort_values(by=['age','salary'],ascending=[True,False])
+print(sorting)
