@@ -18,14 +18,16 @@
 # Selecting and Filtering:
 # Write a Python program to select specific columns and filter rows based on a condition in a DataFrame.
 import pandas as pd
-data = {
-    'name': ['bob','marley','roca','zendaya'],
-    'age': [17,22,35,23],
-    'city': ['nyc','hyderabad','paris','london'],
-    'salary': [18000,20000,22000,35000]
-}
+# data = {
+#     'name': ['bob','marley','roca','zendaya'],
+#     'age': [17,22,35,23],
+#     'city': ['nyc','hyderabad','paris','london'],
+#     'salary': [18000,20000,22000,35000]
+# }
 
-df = pd.DataFrame(data)
-filtered = df[['name','age','salary']][df['age']>17]
-print(filtered)
+# df = pd.DataFrame(data)
+# filtered = df[['name','age','salary']][df['age']>17]
+# print(filtered)
 
+Sorting:
+# Write a Python program to sort a DataFrame by multiple columns.
