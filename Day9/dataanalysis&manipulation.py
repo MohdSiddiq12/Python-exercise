@@ -48,13 +48,13 @@ import pandas as pd
 
 df1 = pd.DataFrame({
     'ID': [1,2,3],
-    'Name': ['Joe','Chandler','Ross']
+    'Name': ['Joe','rachel','chandler']
 })
 
 df2 = pd.DataFrame({
-    'ID': [4,5,6],
-    'Name': ['Rachel','Monica','Pheobe']
+    'ID': [2,3,4],
+    'Name': ['rachel','chandler','Monica']
 })
 
-merged = pd.merge(df1, df2, on='ID', how='outer')
+merged = pd.merge(df1, df2, on='ID', how='inner')
 print("merged dataset \n",merged)
