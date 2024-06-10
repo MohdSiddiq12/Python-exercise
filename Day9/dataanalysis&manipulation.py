@@ -32,13 +32,29 @@ import pandas as pd
 # Sorting:
 # Write a Python program to sort a DataFrame by multiple columns.
 
-data = {
-    'name': ['bob','marley','roca','zendaya','hill','jack','mike'],
-    'age': [17,22,35,23,21,20,20],
-    'city': ['nyc','hyderabad','paris','london','istanbul','sogut','zech'],
-    'salary': [18000,20000,22000,35000,70000,11000,88000]
-}
+# data = {
+#     'name': ['bob','marley','roca','zendaya','hill','jack','mike'],
+#     'age': [17,22,35,23,21,20,20],
+#     'city': ['nyc','hyderabad','paris','london','istanbul','sogut','zech'],
+#     'salary': [18000,20000,22000,35000,70000,11000,88000]
+# }
 
-df = pd.DataFrame(data)
-sorting = df.sort_values(by=['age','salary'],ascending=[True,False])
-print(sorting)
+# df = pd.DataFrame(data)
+# sorting = df.sort_values(by=['age','salary'],ascending=[True,False])
+# print(sorting)
+
+# Merge DataFrames:
+# Write a Python program to merge two DataFrames based on a common column.
+
+df1 = pd.DataFrame({
+    'ID': [1,2,3],
+    'Name': ['Joe','Chandler','Ross']
+})
+
+df2 = pd.DataFrame({
+    'ID': [4,5,6],
+    'Name': ['Rachel','Monica','Pheobe']
+})
+
+merged = pd.merge(df1, df2, on='ID', how='outer')
+print("merged dataset \n",merged)
