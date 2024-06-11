@@ -103,14 +103,37 @@ import pandas as pd
 
 #create a pivot table 
 # Create a DataFrame
+# data = {
+#     'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Alice', 'Bob'],
+#     'Sales': [150, 200, 250, 300, 100, 220],
+#     'City': ['New York', 'Los Angeles', 'Chicago', 'Houston', 'New York', 'Los Angeles'],
+#     'Month': ['Jan', 'Jan', 'Feb', 'Feb', 'Mar', 'Mar']
+# }
+# df = pd.DataFrame(data)
+
+# # Create a pivot table
+# pivot_table = pd.pivot_table(df, values='Sales', index='City', columns='Month', aggfunc='sum')
+# print("Pivot Table:\n", pivot_table)
+
+#handling missing values 
+import numpy as np
+
+# Create a DataFrame with missing values
 data = {
-    'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Alice', 'Bob'],
-    'Sales': [150, 200, 250, 300, 100, 220],
-    'City': ['New York', 'Los Angeles', 'Chicago', 'Houston', 'New York', 'Los Angeles'],
-    'Month': ['Jan', 'Jan', 'Feb', 'Feb', 'Mar', 'Mar']
+    'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+    'Age': [24, np.nan, 22, 32],
+    'City': ['New York', 'Los Angeles', 'Chicago', np.nan]
 }
 df = pd.DataFrame(data)
 
-# Create a pivot table
-pivot_table = pd.pivot_table(df, values='Sales', index='City', columns='Month', aggfunc='sum')
-print("Pivot Table:\n", pivot_table)
+# Identify missing values
+missing_values = df.isnull().sum()
+print("Missing Values:\n", missing_values)
+
+# Fill missing values
+df_filled = df.fillna({'Age': df['Age'].mean(), 'City': 'Unknown'})
+print("DataFrame with Filled Missing Values:\n", df_filled)
+
+# Drop rows with missing values
+df_dropped = df.dropna()
+print("DataFrame with Dropped Missing Values:\n", df_dropped)
