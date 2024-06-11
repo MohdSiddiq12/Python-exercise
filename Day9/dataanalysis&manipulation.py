@@ -58,3 +58,6 @@ import pandas as pd
 
 # merged = pd.merge(df1, df2, on='ID', how='inner')
 # print("merged dataset \n",merged)
+
+# Join DataFrames:
+# Write a Python program to perform different types of joins (inner, outer, left, right) on two DataFrames.
