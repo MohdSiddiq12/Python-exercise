@@ -46,15 +46,15 @@ import pandas as pd
 # Merge DataFrames:
 # Write a Python program to merge two DataFrames based on a common column.
 
-df1 = pd.DataFrame({
-    'ID': [1,2,3],
-    'Name': ['Joe','rachel','chandler']
-})
+# df1 = pd.DataFrame({
+#     'ID': [1,2,3],
+#     'Name': ['Joe','rachel','chandler']
+# })
 
-df2 = pd.DataFrame({
-    'ID': [2,3,4],
-    'Name': ['rachel','chandler','Monica']
-})
+# df2 = pd.DataFrame({
+#     'ID': [2,3,4],
+#     'Name': ['rachel','chandler','Monica']
+# })
 
-merged = pd.merge(df1, df2, on='ID', how='inner')
-print("merged dataset \n",merged)
+# merged = pd.merge(df1, df2, on='ID', how='inner')
+# print("merged dataset \n",merged)
