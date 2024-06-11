@@ -90,13 +90,27 @@ import pandas as pd
 # Group By and Aggregate:
 
 # Create a DataFrame
+# data = {
+#     'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Alice', 'Bob'],
+#     'Sales': [150, 200, 250, 300, 100, 220],
+#     'City': ['New York', 'Los Angeles', 'Chicago', 'Houston', 'New York', 'Los Angeles']
+# }
+# df = pd.DataFrame(data)
+
+# # Group by 'City' and calculate aggregate statistics
+# grouped_df = df.groupby('City').agg({'Sales': ['sum', 'mean', 'max']})
+# print("Grouped DataFrame:\n", grouped_df)
+
+#create a pivot table 
+# Create a DataFrame
 data = {
     'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Alice', 'Bob'],
     'Sales': [150, 200, 250, 300, 100, 220],
-    'City': ['New York', 'Los Angeles', 'Chicago', 'Houston', 'New York', 'Los Angeles']
+    'City': ['New York', 'Los Angeles', 'Chicago', 'Houston', 'New York', 'Los Angeles'],
+    'Month': ['Jan', 'Jan', 'Feb', 'Feb', 'Mar', 'Mar']
 }
 df = pd.DataFrame(data)
 
-# Group by 'City' and calculate aggregate statistics
-grouped_df = df.groupby('City').agg({'Sales': ['sum', 'mean', 'max']})
-print("Grouped DataFrame:\n", grouped_df)
+# Create a pivot table
+pivot_table = pd.pivot_table(df, values='Sales', index='City', columns='Month', aggfunc='sum')
+print("Pivot Table:\n", pivot_table)
