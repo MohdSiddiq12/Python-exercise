@@ -87,3 +87,19 @@ print("Inner Join:\n", inner_join)
 print("Outer Join:\n", outer_join)
 print("Left Join:\n", left_join)
 print("Right Join:\n", right_join)
+
+# Grouping and Aggregation
+# Group By and Aggregate:
+import pandas as pd
+
+# Create a DataFrame
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Alice', 'Bob'],
+    'Sales': [150, 200, 250, 300, 100, 220],
+    'City': ['New York', 'Los Angeles', 'Chicago', 'Houston', 'New York', 'Los Angeles']
+}
+df = pd.DataFrame(data)
+
+# Group by 'City' and calculate aggregate statistics
+grouped_df = df.groupby('City').agg({'Sales': ['sum', 'mean', 'max']})
+print("Grouped DataFrame:\n", grouped_df)
