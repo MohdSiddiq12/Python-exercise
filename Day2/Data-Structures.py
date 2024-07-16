@@ -87,9 +87,9 @@ for name,phone in dict.items():
 
 
 #sets
-# fruits = {"apple", "banana", "cherry", "date", "elderberry"}
-# for fruit in fruits:
-#     print(fruit)
+fruits = {"apple", "banana", "cherry", "date", "elderberry"}
+for fruit in fruits:
+    print(fruit)
 
 #set operations
 
@@ -98,10 +98,10 @@ for name,phone in dict.items():
 # Find the union of the sets.
 fruits1 = {'apple','banana','mango','date'}
 fruits2 = {'cherry','date','elderberry'}
-# print(fruits1.union(fruits2))
+print(fruits1.union(fruits2))
 
 # Find the intersection of the sets.
-# print(fruits1.intersection(fruits2))
+print(fruits1.intersection(fruits2))
 
 # Find the difference between the sets.
 print(fruits1.difference(fruits2))
