@@ -14,21 +14,27 @@
 # # # List Operations:
 # # # Write a Python program to perform the following operations on a list:
 
-# # # Append a new item.
+movies.append('interstellar') # Append a new item.
 
+movies.remove('slumdog millionare') # Remove an item.
 
-# # movies.append('interstellar')
+movies.sort() #sort the list
 
+movies.reverse() #reverse the list
 
-# # # Remove an item.
+print(movies[:3])   #list slicing
 
-# # movies.remove('slumdog millionare')
+print(movies[-3:])   #list slicing
+
+# # 
+
+# # 
 
 
 
 # # # Sort the list.
 
-# # movies.sort()
+# # 
 
 # # # Reverse the list.
 
@@ -39,9 +45,7 @@
 # # # for i in movies:
 # # #     print(len(i))
 
-# #  #list slicing
-# # print(movies[:3])
-# # print(movies[-3:])
+
     
 
 # # Create a Tuple:
