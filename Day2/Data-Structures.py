@@ -62,31 +62,29 @@ print(books[-3]) #Access Tuple Elements:
 
 
 
-# # Create a Dictionary Create a Dictionary:
-# # Write a Python program to create a dictionary with keys as the names of your friends and values as their phone numbers. Print each friend's name and phone number.
-# dict = {'sid':7674,'john':1234,'ajay':3456}
+#Create a Dictionary Create a Dictionary:
+#Write a Python program to create a dictionary with keys as the names of your friends and values as their phone numbers. Print each friend's name and phone number.
+dict = {'sid':7674,'john':1234,'ajay':3456}
 
 
-# # Dictionary Operations:
-# # Write a Python program to:
+#Dictionary Operations:
+#Write a Python program to: Add a new friend and phone number.
 
-# # Add a new friend and phone number.
-
-# dict['joe'] = 9876
+dict['joe'] = 9876
 
 
 
-# # Update an existing phone number.
+dict['joe'] = 7890 # Update an existing phone number.
 
-# dict['joe'] = 7890
-# # for name,phone in dict.items():
-# #     print('name',name  +  'phone', + phone)
-# # Remove a friend from the dictionary.
 
-# del dict['john']
-# for name,phone in dict.items():
-#     print('name',name  +  'phone', + phone)
-# # Print the dictionary.
+for name,phone in dict.items():
+    print('name',name  +  'phone', + phone)
+
+del dict['john'] #Remove a friend from the dictionary.
+for name,phone in dict.items():
+    print('name',name  +  'phone', + phone)
+#Print the dictionary.
+
 
 #sets
 # fruits = {"apple", "banana", "cherry", "date", "elderberry"}
