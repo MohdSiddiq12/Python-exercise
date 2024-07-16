@@ -50,18 +50,15 @@ books = list(books)
 print(books)
 books.append('rich dad poor dad') #Add a new book to the list.
 
-# 
-# # print(books)
-# # Convert the list back to a tuple.
+print(books)
+books = tuple(books) #Convert the list back to a tuple.
+print(books)
 
-# books = tuple(books)
-# # print(books)
-# # Print the final tuple.
+#Print the final tuple.
+print(books)
 
-# # print(books)
+print(books[-3]) #Access Tuple Elements:
 
-# # Access Tuple Elements:
-# print(books[-3])
 
 
 # # Create a Dictionary Create a Dictionary:
