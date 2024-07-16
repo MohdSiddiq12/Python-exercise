@@ -41,16 +41,16 @@ books = ('Negogiating as your life depends on it','leadership qualities','the su
 for i in books:
     print(i)
 
-# # Tuple Operations:
-# # Write a Python program to:
+#Tuple Operations:
+#Write a Python program to:
 
-# # Convert the tuple to a list.
+#Convert the tuple to a list.
 
-# books = list(books)
-# # print(books)
-# # Add a new book to the list.
+books = list(books)
+print(books)
+books.append('rich dad poor dad') #Add a new book to the list.
 
-# books.append('rich dad poor dad')
+# 
 # # print(books)
 # # Convert the list back to a tuple.
 
