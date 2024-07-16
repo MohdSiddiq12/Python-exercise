@@ -34,12 +34,12 @@ for i in movies:
 
     
 
-# # Create a Tuple:
-# # Write a Python program to create a tuple of your favorite books and print each book.
+# Create a Tuple:
+# Write a Python program to create a tuple of your favorite books and print each book.
 
-# books = ('Negogiating as your life depends on it','leadership qualities','the subtle art of not giving a fuck')
-# # for i in books:
-# #     print(i)
+books = ('Negogiating as your life depends on it','leadership qualities','the subtle art of not giving a fuck')
+for i in books:
+    print(i)
 
 # # Tuple Operations:
 # # Write a Python program to:
