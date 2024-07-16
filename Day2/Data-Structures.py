@@ -48,9 +48,10 @@ for i in books:
 
 books = list(books)
 print(books)
-books.append('rich dad poor dad') #Add a new book to the list.
 
+books.append('rich dad poor dad') #Add a new book to the list.
 print(books)
+
 books = tuple(books) #Convert the list back to a tuple.
 print(books)
 
