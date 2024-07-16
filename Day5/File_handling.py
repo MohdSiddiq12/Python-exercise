@@ -35,7 +35,7 @@
 # lines = ['hello ', 'siddiq']
 # with open('Day5\example.txt','w') as file:
 #     for line in lines:
-#         file.write(line + '\n')
+#         line file.write(+ '\n')
 
 
 # Appending to Files
