@@ -89,6 +89,7 @@
 
 # print_area(rectangle)
 # print_area(circle)
+
 # Encapsulation
 # Encapsulation:
 # Write a Python class called BankAccount with private attributes for account number and balance.
