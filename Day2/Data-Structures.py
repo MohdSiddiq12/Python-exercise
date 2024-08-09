@@ -45,7 +45,7 @@ for i in books:
 #Write a Python program to:
 
 #Convert the tuple to a list.
-
+#because tuple is immutable we convert it to list
 books = list(books)
 print(books)
 
