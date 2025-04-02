@@ -76,11 +76,11 @@ for name, age in dict.items():
 
 # Taking input for the first set
 set1_input = input("Enter elements of the first set separated by commas: ")
-set1 = set(set1_input.split(','))
+set1 = set(item.strip() for item in set1_input.split(','))
 
 # Taking input for the second set
 set2_input = input("Enter elements of the second set separated by commas: ")
-set2 = set(set2_input.split(','))
+set2 = set(item.strip() for item in set2_input.split(','))
 
 # Printing the intersection, union, and difference of the sets
 print("Intersection:", set1.intersection(set2))
